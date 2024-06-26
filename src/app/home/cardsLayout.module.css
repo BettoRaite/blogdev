@@ -1,0 +1,7 @@
+.layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 1216px;
+  gap: 20px;
+  margin: auto;
+}
