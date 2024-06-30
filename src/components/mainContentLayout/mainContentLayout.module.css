@@ -1,0 +1,13 @@
+.layout {
+  margin: auto;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: var(--font-open-sans);
+  color: #181a2a;
+}

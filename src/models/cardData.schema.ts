@@ -4,4 +4,5 @@ export interface CardData {
 	author: string;
 	tags?: string[];
 	date?: Date;
+	id: number;
 }

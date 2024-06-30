@@ -1,0 +1,39 @@
+.searchBarDisabled * {
+  opacity: 0.6;
+}
+.searchBarDisabled > button:hover {
+  background-color: var(--search-bar-search-button-bg-color);
+}
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.input {
+  border-radius: 10px;
+  border: none;
+  background-color: #f4f4f5;
+  box-sizing: border-box;
+  padding-left: var(--search-bar-padding-left);
+  padding-right: var(--search-bar-padding-right);
+  padding-top: var(--search-bar-padding-top-down);
+  padding-bottom: var(--search-bar-padding-top-down);
+  color: #323232;
+  outline: none;
+}
+.searchButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--search-bar-search-button-bg-color);
+  border: none;
+  border-radius: 10px;
+  padding: var(--search-button-padding);
+  transition: 0.3s all;
+}
+.searchButton:hover {
+  background-color: #c2c2c2;
+}
+.searchButton:active {
+  background-color: #323232;
+}

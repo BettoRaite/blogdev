@@ -1,0 +1,5 @@
+.article {
+  width: var(--base-width);
+  margin: auto;
+  background-color: bisque;
+}
