@@ -1,1 +1,1 @@
-export const joinClassNames = (...classes: string[]) => classes.join(" "); 
+export const joinClassNames = (...classes: string[]) => classes.join(" ");

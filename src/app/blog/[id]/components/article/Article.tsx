@@ -6,10 +6,11 @@ function Article(props: {
 	author?: string;
 	publicationDate?: string;
 }) {
+	const { title, content } = props;
 	return (
 		<section className={styles.article}>
-			<h1>Title is : {props.title}</h1>
-			<p>{props.content}</p>
+			<h1>{title}</h1>
+			<p>{content}</p>
 		</section>
 	);
 }

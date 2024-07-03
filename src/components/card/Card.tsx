@@ -57,10 +57,10 @@ function Card(cardData: CardData) {
 					</div>
 					<p className={styles.publicationDate}>{publicationDate}</p>
 				</div>
-				<a className="cta read-more" href={`/blog/${id}`}>
-					Read More
-				</a>
 			</div>
+			<a className={styles.readMore} href={`/blog/${id}`}>
+				Read more...
+			</a>
 		</section>
 	);
 }

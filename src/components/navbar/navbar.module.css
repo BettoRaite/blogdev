@@ -1,11 +1,11 @@
-.navbarWrapper {
+.navWrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100px;
 }
-.navbar {
-  width: 65%;
+.nav {
+  width: var(--base-width);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,7 +26,7 @@
   border-radius: 10px;
   font-weight: bolder;
 }
-.linksMenu {
+.navList {
   margin: 0;
   padding-left: var(--links-menu-padding-sides);
   padding-right: var(--links-menu-padding-sides);
@@ -35,16 +35,4 @@
   gap: calc(var(--links-menu-items-gap) - var(--links-menu-item-padding) * 2);
   list-style: none;
 }
-.linksMenuItem {
-  padding: var(--links-menu-item-padding);
-  border-radius: 10px;
-  transition: 0.2s background-color;
-}
-.linksMenuItem:hover {
-  background-color: rgb(59, 60, 74, 0.1);
-}
-.menuLink {
-  text-decoration: none;
-  letter-spacing: 0.05rem;
-  color: #3b3c4a;
-}
+

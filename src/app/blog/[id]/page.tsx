@@ -5,9 +5,9 @@ export default function Page({ params }: { params: { id: string } }) {
 	const { id } = params;
 
 	return (
-		<main>
+		<>
 			<Navbar />
 			<MainContentLayout id={id} />
-		</main>
+		</>
 	);
 }

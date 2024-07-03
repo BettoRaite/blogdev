@@ -34,7 +34,7 @@
     #00000080
   );
   /* All components */
-  --base-width: 65%;
+  --base-width: 75%;
   /* Post card */
   --title-margin-top-down: 20px;
   --author-pic-size: 30px;
@@ -52,8 +52,25 @@
   --website-title-font-size: 1.4rem;
   --website-title-font-family: "Ubuntu", sans-serif;
   --website-title-color: #49494a;
+  /* Banner */
+  --banner-height: 400px;
+  --banner-margin-top: 30px;
+  --banner-margin-bottom: 50px;
+  /* Divider */
+  --margin-top-down: 50px;
+  /* Footer */
+  --footer-margin-top: 100px;
+  --footer-main-content-margin-top-down: 64px;
+  --footer-copyright-height: 120px;
+  --footer-about-title-font-size: 1.125rem;
+  --footer-about-title-margin-bottom: 12px;
+  --footer-about-description-margin-bottom: 24px;
+  --footer-nav-gap: 80px;
+  --footer-website-category-navs-title-font-size: 1.125rem;
 }
-
+#root {
+  font-family: var(--font-open-sans);
+}
 .montserrat-normal {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;

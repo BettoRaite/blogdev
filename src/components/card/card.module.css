@@ -8,6 +8,7 @@
   border: 1px solid #e8e8ea;
   box-sizing: border-box;
   padding: 16px;
+  font-family: var(--font-open-sans);
 }
 .coverImage {
   width: 100%;
@@ -20,8 +21,10 @@
   color: #181a2a;
 }
 .descriptionLayout {
+  height: 150px;
   display: flex;
   flex-flow: column;
+  justify-content: space-around;
   gap: 20px;
   box-sizing: border-box;
   padding: 6px;
@@ -58,4 +61,18 @@
   font-weight: 400;
   font-style: normal;
   color: #97989f;
+}
+.readMore {
+  margin-top: auto;
+  justify-self: flex-end;
+  border-radius: 10px;
+  padding: 5px;
+  text-decoration: none;
+  width: max-content;
+  color: #97989f;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.readMore:hover {
+  color: goldenrod;
 }
