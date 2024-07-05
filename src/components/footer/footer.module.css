@@ -4,7 +4,7 @@
   flex-flow: column;
   margin-top: var(--footer-margin-top);
 }
-.mainContent {
+.footerContentWrapper {
   align-self: center;
   width: var(--base-width);
   display: grid;
@@ -20,7 +20,7 @@
 .aboutDescription {
   margin-bottom: var(--footer-about-description-margin-bottom);
 }
-.footerNav {
+.navsContainer {
   display: flex;
   justify-content: center;
   gap: var(--footer-nav-gap);
@@ -37,8 +37,19 @@
 .websiteTitle {
   margin-bottom: 6px;
 }
-.copyrightList {
+.copyrightLinks {
+  padding: 0;
+  margin: 0;
+  align-self: center;
   display: flex;
   list-style: none;
-  gap: 10px;
+  gap: var(--footer-copyright-links-gap);
+}
+.copyrightLinks * a {
+  font-size: var(--footer-copyright-links-font-size);
+}
+@media (width <= 1250px) {
+  .footerContentWrapper {
+    flex-flow: column;
+  }
 }

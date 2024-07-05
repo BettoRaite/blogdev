@@ -5,21 +5,20 @@ import styles from "./footer.module.css";
 function Footer() {
 	return (
 		<footer className={styles.footer}>
-			<section className={styles.mainContent}>
-				<div className={styles.about}>
+			<section className={styles.footerContentWrapper}>
+				<section className={styles.about}>
 					<h2 className={styles.aboutTitle}>About</h2>
 					<p className={styles.aboutDescription}>
 						Bettoblog is a place where I share my thoughts on life and all.
-						<br />
 					</p>
-					<div className={styles.authorContact}>
+					<div className={styles.aboutContact}>
 						<p className={styles.email}>
-							<span style={{ fontWeight: "bold" }}>Email&nbsp;:</span>
-							&nbsp;bettoraite@gmail.com
+							<span style={{ fontWeight: "bold" }}>Email:</span>
+							<a href="mailto:bettoraite@gmail.com">&nbsp;bettoraite@gmail.com</a>
 						</p>
 					</div>
-				</div>
-				<section className={styles.footerNav}>
+				</section>
+				<section className={styles.navsContainer}>
 					<HorizontalNav
 						title="Quick links"
 						items={[
@@ -39,29 +38,28 @@ function Footer() {
 						]}
 					/>
 				</section>
-
-				<Newsletter />
+				{/* <Newsletter /> */}
 			</section>
 			<section className={styles.copyrightWrapper}>
 				<div className={styles.copyright}>
 					<p className={styles.websiteTitle}>BettoBlog</p>
-					<p className={styles.websiteTitle}>
+					<p className={styles.copyrightText}>
 						© BettoRaite 2024. All Rights Reserved.
 					</p>
 				</div>
-				<ul className={styles.copyrightList}>
-					<li className={styles.copyrightListItem}>
-						<a className="nav__link--default" href="">
+				<ul className={styles.copyrightLinks}>
+					<li className={styles.copyrightLinksItem}>
+						<a className="nav__link--default" href="/terms-of-use">
 							Terms of use
 						</a>
 					</li>
-					<li className={styles.copyrightListItem}>
-						<a className="nav__link--default" href="">
+					<li className={styles.copyrightLinksItem}>
+						<a className="nav__link--default" href="/privacy-policy">
 							Privacy policy
 						</a>
 					</li>
-					<li className={styles.copyrightListItem}>
-						<a className="nav__link--default" href="">
+					<li className={styles.copyrightLinksItem}>
+						<a className="nav__link--default" href="/cookie-policy">
 							Cookie policy
 						</a>
 					</li>

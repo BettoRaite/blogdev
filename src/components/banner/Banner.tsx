@@ -1,4 +1,5 @@
 import styles from "./banner.module.css";
+import Image from "next/image";
 function Banner() {
 	return (
 		<section className={styles.banner}>
@@ -7,7 +8,13 @@ function Banner() {
 				<br />
 				<span className={styles.highlighted}>[about programming]</span>
 			</h1>
-			<div className={styles.cover} />
+			<Image
+				className={styles.cover}
+				src="/banner.jpg"
+				width={1100}
+				height={760}
+				alt="Banner of a red flower on dark background"
+			/>
 		</section>
 	);
 }

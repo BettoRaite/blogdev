@@ -3,8 +3,6 @@
   flex-flow: column;
   justify-content: center;
   padding: 60px;
-  background-image: url("https://images.unsplash.com/photo-1487967380170-6de32c5fdf43?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-size: cover;
   height: var(--banner-height);
   width: var(--base-width);
   margin: auto;
@@ -12,8 +10,19 @@
   margin-top: var(--banner-margin-top);
   margin-bottom: var(--banner-margin-bottom);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+}
+.cover {
+  align-self: center;
+  /* height: var(--banner-height); */
+  /* width: var(--base-width); */
+  border-radius: 10px;
+  object-fit: cover;
 }
 .header {
+  top: 100px;
+  position: absolute;
   font-weight: bold;
   font-size: 3rem;
   width: 70%;
