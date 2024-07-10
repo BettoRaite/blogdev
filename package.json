@@ -1,28 +1,37 @@
 {
-	"name": "blogdev",
-	"version": "0.1.0",
-	"private": true,
-	"scripts": {
-		"dev": "next dev",
-		"build": "next build",
-		"start": "next start",
-		"lint": "next lint"
-	},
-	"dependencies": {
-		"@next/font": "^14.2.4",
-		"bootstrap": "^5.3.3",
-		"bootstrap-icons": "^1.11.3",
-		"next": "14.2.4",
-		"react": "^18",
-		"react-dom": "^18"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "^1.8.3",
-		"@types/node": "^20",
-		"@types/react": "^18",
-		"@types/react-dom": "^18",
-		"eslint": "8.57.0",
-		"eslint-config-next": "14.2.4",
-		"typescript": "^5"
-	}
+  "name": "blogdev",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/font": "^14.2.4",
+    "@types/dotenv": "^8.2.0",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.31.4",
+    "next": "14.2.4",
+    "postgres": "^3.4.4",
+    "react": "^18",
+    "react-dom": "^18",
+    "supabase": "^1.183.5",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.8.3",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/uuid": "^10.0.0",
+    "drizzle-kit": "^0.22.8",
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.2.4",
+    "tsx": "^4.16.2",
+    "typescript": "^5"
+  }
 }

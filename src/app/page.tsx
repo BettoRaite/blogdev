@@ -1,29 +1,15 @@
-"use client";
+import Banner from "@/app/ui/components/banner/Banner.tsx";
+import Divider from "@/app/ui/components/divider/Divider.tsx";
+import Footer from "@/app/ui/components/footer/Footer.tsx";
+import { MainContentLayout } from "@/app/ui/components/mainContentLayout/MainContentLayout.tsx";
 
-import Banner from "@/components/banner/Banner.tsx";
-import Divider from "@/components/divider/Divider.tsx";
-import Footer from "@/components/footer/Footer.tsx";
-import MainContentLayout from "@/components/mainContentLayout/MainContentLayout.tsx";
-import Navbar from "@/components/navbar/Navbar.tsx";
-import { createContext, useState } from "react";
-
-export const searchQueryContext = createContext<null | {
-	searchQuery: string;
-	setSearchQuery: React.Dispatch<React.SetStateAction<string>>;
-}>(null);
-
-function Home() {
-	const [searchQuery, setSearchQuery] = useState("");
+export default function Page() {
 	return (
 		<main>
-			<searchQueryContext.Provider value={{ searchQuery, setSearchQuery }}>
-				<Navbar />
-				<Banner />
-				<Divider />
-				<MainContentLayout />
-			</searchQueryContext.Provider>
+			<Banner />
+			<Divider />
+			<MainContentLayout />
 			<Footer />
 		</main>
 	);
 }
-export default Home;

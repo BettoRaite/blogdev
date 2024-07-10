@@ -27,15 +27,7 @@
   border-radius: 10px;
   font-weight: bolder;
 }
-.navList {
-  margin: 0;
-  padding-left: var(--links-menu-padding-sides);
-  padding-right: var(--links-menu-padding-sides);
-  display: flex;
-  align-items: center;
-  gap: calc(var(--links-menu-items-gap) - var(--links-menu-item-padding) * 2);
-  list-style: none;
-}
+
 .toggleSidebarButton {
   align-self: flex-end;
   background-color: transparent;

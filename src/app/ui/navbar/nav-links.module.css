@@ -1,0 +1,9 @@
+.navLinks {
+  margin: 0;
+  padding-left: var(--links-menu-padding-sides);
+  padding-right: var(--links-menu-padding-sides);
+  display: flex;
+  align-items: center;
+  gap: calc(var(--links-menu-items-gap) - var(--links-menu-item-padding) * 2);
+  list-style: none;
+}

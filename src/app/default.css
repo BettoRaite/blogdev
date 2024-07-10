@@ -1,14 +1,25 @@
 /* Navs */
 .nav__list-item--default {
-    padding: 10px;
-    border-radius: 10px;
-    transition: 0.2s background-color;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.2s background-color;
 }
 .nav__list-item--default:hover {
-    background-color: rgb(59, 60, 74, 0.1);
+  background-color: rgb(59, 60, 74, 0.1);
+}
+.nav__list-item--active {
+  background-color: rgb(59, 60, 74, 0.05);
 }
 .nav__link--default {
   text-decoration: none;
   letter-spacing: 0.05rem;
   color: #3b3c4a;
+}
+/* Default page */
+.default-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
 }

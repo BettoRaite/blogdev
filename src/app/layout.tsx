@@ -1,6 +1,7 @@
 import "./globals.css";
 import "./default.css";
 import "bootstrap/dist/css/bootstrap.css";
+import Navbar from "./ui/navbar/Navbar";
 
 export const metadata = {
 	title: "Blogging dev",
@@ -14,7 +15,10 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body>{children}</body>
+			<body>
+				<Navbar />
+				{children}
+			</body>
 		</html>
 	);
 }

@@ -4,9 +4,9 @@ function Banner() {
 	return (
 		<section className={styles.banner}>
 			<h1 className={styles.header}>
-				The blog
+				BettoBlog
 				<br />
-				<span className={styles.highlighted}>[about programming]</span>
+				<span className={styles.highlighted}>From programming to my life.</span>
 			</h1>
 			<Image
 				className={styles.cover}

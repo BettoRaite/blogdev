@@ -1,5 +1,5 @@
 import type { CardData } from "@/models/cardData.schema.ts";
-import { joinClassNames } from "@/utils/strings.ts";
+import { joinClassNames } from "@/lib/utils/strings";
 import styles from "./card.module.css";
 
 const getPublicationDate = (date: Date) => {
