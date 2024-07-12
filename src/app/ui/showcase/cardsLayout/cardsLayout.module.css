@@ -1,0 +1,17 @@
+.layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media screen and (width <= 1200px) {
+  .layout {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (width <= 800px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}

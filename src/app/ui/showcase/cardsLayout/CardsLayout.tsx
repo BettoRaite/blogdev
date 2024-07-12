@@ -1,13 +1,10 @@
-"use client";
-import useFetch from "@/hooks/useFetch.ts";
-import { useEffect, useState } from "react";
-import Card from "../card/Card.tsx";
+import { Card } from "@/app/ui/showcase/card/Card.tsx";
 import styles from "./cardsLayout.module.css";
-import { InsertPost } from "@/lib/database/schema/schema.ts";
+import { PostWithAuthorName } from "@/lib/database/index.ts";
 
 interface CardsLayoutProps {
 	title?: string;
-	postsData: InsertPost[];
+	postsData: PostWithAuthorName[];
 }
 
 export function CardsLayout({ title = "", postsData }: CardsLayoutProps) {
@@ -18,9 +15,9 @@ export function CardsLayout({ title = "", postsData }: CardsLayoutProps) {
 			<Card
 				key={postData.id}
 				title={postData.title}
-				author="bettoraite"
+				authorName={postData.author_name}
 				coverUrl={url}
-				date={postData.created_at}
+				date={postData.created_at ?? ""}
 				tags={[]}
 				id={postData.id}
 			/>

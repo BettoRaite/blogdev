@@ -1,11 +1,13 @@
-import styles from "./article.module.css";
+import styles from "./post.module.css";
 
-function Article(props: {
+interface PostProps {
 	title: string;
 	content: string;
 	author?: string;
 	publicationDate?: string;
-}) {
+}
+
+export function Post(props: PostProps) {
 	const { title, content } = props;
 	return (
 		<section className={styles.article}>
@@ -14,4 +16,3 @@ function Article(props: {
 		</section>
 	);
 }
-export default Article;

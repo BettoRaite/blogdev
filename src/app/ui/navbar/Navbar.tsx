@@ -1,4 +1,4 @@
-import SearchBar from "../components/searchBar/SearchBar.tsx";
+import SearchBar from "./searchBar/SearchBar.tsx";
 import styles from "./navbar.module.css";
 import Image from "next/image";
 import NavLinks from "./NavLinks";

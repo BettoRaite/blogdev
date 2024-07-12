@@ -3,13 +3,22 @@
   display: flex;
   flex-flow: column;
   gap: 16px;
-  border-radius: 16px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-  border: 1px solid #e8e8ea;
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05); /* Soft shadow */
+  border: 1px solid rgba(200, 200, 200, 0.6); /* Light gray border */
   box-sizing: border-box;
-  padding: 16px;
+  padding: 20px; /* Ample padding */
   font-family: var(--font-open-sans);
+  background: rgba(255, 255, 255, 0.4); /* Light gray background */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease; /* Transition effects */
 }
+
+.card:hover {
+  transform: translateY(-5px) scale(1.02); /* Lift effect on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+  background: rgba(240, 240, 240, 0.6); /* Darker gray on hover */
+}
+
 .coverImage {
   width: 100%;
   border-radius: 6px;

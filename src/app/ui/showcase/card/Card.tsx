@@ -1,41 +1,24 @@
-import type { CardData } from "@/models/cardData.schema.ts";
-import { joinClassNames } from "@/lib/utils/strings";
+import { joinClassNames } from "@/utils/strings.ts";
+import { getPublicationDate } from "@/lib/helpers/strings.ts";
 import styles from "./card.module.css";
+import Link from "next/link";
 
-const getPublicationDate = (date: Date) => {
-	const day = date.getDate();
-	const monthIndex = date.getMonth();
-	const monthIndexToMonth = [
-		"January",
-		"February",
-		"March",
-		"April",
-		"May",
-		"June",
-		"July",
-		"August",
-		"September",
-		"October",
-		"November",
-		"December",
-	];
-	const year = date.getFullYear();
-	return `${monthIndexToMonth[monthIndex]} ${day}, ${year}`;
-};
+interface CardProps {
+	title: string;
+	coverUrl: string;
+	authorName: string;
+	date: string;
+	tags: string[];
+	id: number;
+}
 
-function Card(cardData: CardData) {
-	const {
-		title,
-		coverUrl,
-		author,
-		date = new Date(),
-		tags = [],
-		id,
-	} = cardData;
-	const publicationDate = getPublicationDate(date);
+export function Card(cardData: CardProps) {
+	const { title, coverUrl, authorName, date, tags = [], id } = cardData;
 
 	const pic =
 		"https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+	const publicationDate = getPublicationDate(new Date(date));
+
 	return (
 		<section className={styles.card}>
 			<div className={styles.coverWrapper}>
@@ -52,17 +35,15 @@ function Card(cardData: CardData) {
 					<div className={styles.authorInfo}>
 						<img className={styles.authorPic} src={pic} alt="" />
 						<p className={joinClassNames(styles.authorName, styles.baseFont)}>
-							BettoRaite
+							{authorName}
 						</p>
 					</div>
 					<p className={styles.publicationDate}>{publicationDate}</p>
 				</div>
 			</div>
-			<a className={styles.readMore} href={`/blog/${id}`}>
+			<Link className={styles.readMore} href={`/blog/${id}`}>
 				Read more...
-			</a>
+			</Link>
 		</section>
 	);
 }
-
-export default Card;
