@@ -1,8 +1,7 @@
-import SearchBar from "./searchBar/SearchBar.tsx";
+import SearchBar from "./SearchBar/SearchBar.tsx";
 import styles from "./navbar.module.css";
 import Image from "next/image";
 import NavLinks from "./NavLinks";
-// [+]: Add usePathname .
 
 const pageLinks = [
 	{ name: "Home", href: "/" },
@@ -29,7 +28,7 @@ function Navbar() {
 					/>
 				</button>
 				<div className={styles.sidebarWrapper}>
-					{/* <NavLinks layout="column" links={pageLinks} /> */}
+					<NavLinks layout="column" links={pageLinks} />
 				</div>
 
 				<div className={styles.searchBarWrapper}>

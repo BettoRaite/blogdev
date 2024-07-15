@@ -1,0 +1,26 @@
+.layout {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+}
+.headline {
+  background-color: var(--headline-bg-color);
+  border-radius: 10px;
+  padding: 10px;
+  color: var(--headline-color);
+}
+.githubAvatar {
+  width: var(--github-avatar-size);
+  height: var(--github-avatar-size);
+  border: 1px solid black;
+  border-radius: 100%;
+}
+.aboutDescription {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  gap: var(--about-description-gap);
+  font-weight: bold;
+}

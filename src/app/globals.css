@@ -38,7 +38,7 @@
   /* Post card */
   --title-margin-top-down: 20px;
   --author-pic-size: 30px;
-  --author-name-color: #97989f;
+  --author-name-color: rgb(151, 152, 159);
   /* SearchBar */
   --search-bar-padding-top-down: 8px;
   --search-bar-padding-left: 16px;
@@ -52,8 +52,8 @@
   --links-menu-item-padding: 10px;
   --website-title-font-size: 1.4rem;
   --website-title-font-family: "Ubuntu", sans-serif;
-  --website-title-color: #49494a;
-  --website-title-bg: hsla(236, 11%, 26%, 10%);
+  --website-title-color: rgb(73, 73, 74);
+  --website-title-bg: rgba(59, 60, 74, 0.102);
   /* Banner */
   --banner-height: 400px;
   --banner-margin-top: 30px;
@@ -71,6 +71,11 @@
   --footer-website-category-navs-title-font-size: 1.125rem;
   --footer-copyright-links-gap: 16px;
   --footer-copyright-links-font-size: 0.95rem;
+  /* About */
+  --headline-bg-color: rgb(59, 60, 74, 0.1);
+  --headline-color: rgb(73, 73, 74);
+  --github-avatar-size: 100px;
+  --about-description-gap: 20px;
 }
 #root {
   font-family: var(--font-open-sans);
